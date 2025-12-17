@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed K. Alrasheed</title>
+    <meta name="description" content="Digital Business Card of Ahmed K. Alrasheed - Full-Stack Developer & AI Engineer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Dark Luxury Theme Tokens */
+        --primary: #135250;
+        --primary-light: #1a6c69;
+        --primary-dark: #0e3e3d;
+        --secondary: #ad8a5f;
+        --secondary-light: #c39f73;
+        --secondary-dark: #8f6f4b;
+        --accent: #4c8a73;
+        --accent-light: #66a892;
+        --accent-dark: #3a6c59;
+        --bg: #0b1918;
+        --bg-alt: #0f2220;
+        --text: #e8f1ef;
+        --text-light: #c7d7d3;
+        --border: #2a4744;
+        --shadow-color: rgba(19, 82, 80, 0.35);
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      /* Animated Background Blobs */
+      .blob {
+        position: absolute;
+        filter: blur(80px);
+        opacity: 0.4;
+        z-index: -1;
+        animation: float 20s infinite alternate ease-in-out;
+      }
+
+      @keyframes float {
+        0% { transform: translate(0, 0) scale(1); }
+        100% { transform: translate(20px, -20px) scale(1.1); }
+      }
+
+      /* Custom Selection Color */
+      ::selection {
+        background: var(--primary);
+        color: var(--text);
+      }
+
+      /* Smooth Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 4px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
